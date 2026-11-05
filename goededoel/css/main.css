@@ -55,29 +55,48 @@ body {
 
 .main-navigation {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 32px;
-    margin: 0 auto;
+    gap: 22px;
 }
 
-.main-navigation > a {
-    color: rgb(248, 247, 247);
+.main-navigation a {
+    color: #062f24;
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 700;
-    transition: color 0.2s ease;
-    border: 1px solid;
-    padding: 14px 30px;
-    border-radius: 200px;
-    background-color: #ef7918;
-
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.main-navigation > a:hover {
-    transform: scale(1.03);
-    transition: background-color 0.2s ease, transform 0.2s ease;
+.main-navigation a:hover {
+    text-decoration: underline;
+}
+
+.main-navigation .doneerknop {
+    padding: 10px 18px;
+    border-radius: 24px;
     background-color: #b65200;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 10px 20px;
+    }
+
+    .main-navigation {
+        gap: 10px 14px;
+    }
+
+    .main-navigation a {
+        font-size: 13px;
+    }
+
+    .hero-section {
+        padding-top: 170px;
+    }
 }
 
 .button {
@@ -358,50 +377,6 @@ main {
     width: 48px;
     height: 48px;
 }
-
-.main-navigation {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    margin-left: auto;
-    margin-right: 0;
-}
-
-.menu-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    border: 2px solid #e0dfdb;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.menu-button:hover {
-    background-color: #f3f2ef;
-    transform: scale(1.03);
-    transition: color 0.2s e ase;
-
-
-}
-
-.menu-button span {
-    width: 20px;
-    height: 2px;
-    background-color: #0b251a;
-    border-radius: 1px;
-}
-
-
-
-
-
-
 
 .impact-section {
     gap: 32px;
@@ -865,61 +840,6 @@ html {
     padding-top: 0;
 }
 
-.klik-keuze {
-    position: absolute;
-    opacity: 0;
-    width: 1px;
-    height: 1px;
-}
-
-.klik-keuze:focus-visible + label {
-    outline: 2px solid #ef7918;
-    outline-offset: 4px;
-}
-
-.menu-links {
-    position: absolute;
-    top: calc(100% + 8px);
-    right: 20px;
-    width: 260px;
-    max-width: calc(100vw - 24px);
-    padding: 10px;
-    background-color: white;
-    border: 1px solid #e0e5df;
-    border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(6, 47, 36, 0.15);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-8px);
-    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
-}
-
-#menu-open:checked ~ .menu-links {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.menu-links a {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px;
-    border-radius: 8px;
-    color: #062f24;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.menu-links a:hover,
-.menu-links a:focus-visible {
-    background-color: #f1f5e9;
-}
-
-.menu-button span {
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
 .donatie-bedankt p,
 #bericht-verstuurd {
     display: none;
@@ -1021,11 +941,6 @@ html {
 }
 
 @media (max-width: 600px) {
-    .header-inner,
-    .main-navigation {
-        gap: 12px;
-    }
-
     .brand-name {
         font-size: 18px;
     }
@@ -1035,20 +950,6 @@ html {
         height: 36px;
     }
 
-    .main-navigation > a {
-        padding: 12px;
-        font-size: 12px;
-    }
-
-    .menu-button {
-        width: 40px;
-        height: 40px;
-        flex-shrink: 0;
-    }
-
-    .menu-links {
-        right: 12px;
-    }
 }
 @media (max-width: 600px) {
     html, main {

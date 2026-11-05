@@ -1,13 +1,8 @@
 
 //*Portfolio
 
-1. Contact pagina toevoegen xx
-2.Java opdrachten verwijderen (stage bedrijf boeit je opdrachten niet zoveel) xx
-3.Link naar github/Code 
-4.Nog te leren (php,javascript,python/C#)
-5.Talen (NL,TU,ARABISCH...)
-6.Thumbnail van goededoel
-7.Goededoel zetten als in aandachttrekkende sectie
+
+1.Nog te leren (php,javascript,python/C#)
 
 //*Opdrachten
 
