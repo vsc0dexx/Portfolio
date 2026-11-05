@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Jehad</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/navigatie.css">
+</head>
+
+<body id="boven">
+    <div class="contactpage">
+        <div class="name">
+            <h1>Jehad.</h1>
+        </div>
+
+        <div class="navigation">
+            <a href="index.html" class="nav">Over mij</a>
+            <a href="skills.html" class="nav">Skills</a>
+            <a href="projecten.html" class="nav">Projecten</a>
+            <a href="contact.html" class="nav actief" aria-current="page">Contact</a>
+        </div>
+
+        <h3 id="contacttitle">Contact</h3>
+        <h1 id="contactheading">Laten we kennismaken.</h1>
+        <p id="contacttext">Heb je een vraag over mijn projecten of wil je samenwerken?<br>
+            Stuur me gerust een bericht.</p>
+
+        <div class="contactinfo">
+            <div class="contactuitleg">
+                <h2>Stuur me een bericht.</h2>
+                <p>Een vraag over mijn werk of een leuk idee?<br>
+                    Vul het formulier in om contact op te nemen.</p>
+                <a href="projecten.html">Bekijk mijn projecten &rarr;</a>
+            </div>
+
+            <!-- Het formulier kan aan zodra het Formspree formulieradres is gekoppeld. -->
+            <form class="contactform" method="post">
+                <div class="formrij">
+                    <div class="formveld">
+                        <label for="naam">Naam</label>
+                        <input type="text" id="naam" name="naam" placeholder="Je naam" autocomplete="name" required maxlength="100">
+                    </div>
+                    <div class="formveld">
+                        <label for="email">E-mailadres</label>
+                        <input type="email" id="email" name="email" placeholder="Je e-mailadres" autocomplete="email" required maxlength="254">
+                    </div>
+                </div>
+
+                <div class="formveld">
+                    <label for="onderwerp">Onderwerp</label>
+                    <input type="text" id="onderwerp" name="onderwerp" placeholder="Waar gaat je bericht over?" required maxlength="150">
+                </div>
+
+                <div class="formveld">
+                    <label for="bericht">Bericht</label>
+                    <textarea id="bericht" name="bericht" rows="6" placeholder="Schrijf hier je bericht..." required maxlength="5000"></textarea>
+                </div>
+
+                <button type="submit" class="contactbutton" enabled>Verstuur bericht</button>
+<!--                 <p class="formmelding">Het contactformulier is binnenkort beschikbaar.</p>
+ -->            </form>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>© 2026 Jehad · Portfolio</p>
+        <div class="footerlinks">
+            <a href="contact.html">Contact</a>
+            <a href="#boven">Naar boven &uarr;</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+html body {
+    background-color: #0B0D12
+}
+
+.projecten {
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+.name {
+    display: flex;
+    justify-content: left;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.projecten h3 {
+    display: flex;
+    color: #5B8DEF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.5px;
+    letter-spacing: 0.78px;
+    text-transform: uppercase;
+    padding-top: 32px;
+}
+
+.projecten h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.groep {
+    margin-bottom: 16px;
+    padding: 24px;
+    scroll-margin-top: 24px;
+    border: 1px solid #202735;
+    border-radius: 22px;
+    background-color: #131720;
+    color: #E6E9EF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.groep h2 {
+    margin: 0 0 14px;
+    font-size: 21px;
+}
+
+.groep p {
+    margin: 0;
+    color: #8A93A6;
+    line-height: 1.5;
+}
+
+#alles {
+    margin-bottom: 0;
+    font-size: 44px;
+}
+
+.projectintro {
+    max-width: 620px;
+    margin: 16px 0 34px;
+    color: #A1ABC0;
+    font: 16px/1.6 Arial, Helvetica, sans-serif;
+}
+
+.groep {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.projectfoto {
+    display: block;
+    flex: 1.25;
+    min-width: 0;
+}
+
+.projectfoto img {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.projecttekst {
+    flex: 1;
+}
+
+.projecttekst .projectlabel {
+    margin-bottom: 10px;
+    color: #82A7FA;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.projectknop {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 16px;
+    border: 1px solid #283E6B;
+    border-radius: 8px;
+    background-color: #142447;
+    color: #E6E9EF;
+    text-decoration: none;
+}
+
+.projectknop:hover {
+    background-color: #202C52;
+}
+
+@media (max-width: 700px) {
+    #alles {
+        font-size: 34px;
+    }
+
+    .groep {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+}

@@ -1,0 +1,404 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #0B0D12;
+    color: #E6E9EF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px 48px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.name h1 {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+.name p {
+    margin: 0;
+    color: #8A93A6;
+    font-size: 13px;
+}
+
+.bovenkant {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    padding: 64px 0 62px;
+}
+
+.welkom {
+    flex: 1;
+    min-width: 0;
+}
+
+.kleinetitel {
+    margin: 0 0 14px;
+    color: #82A7FA;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.welkom h1 {
+    margin: 0;
+    color: white;
+    font-size: 48px;
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+}
+
+.welkom h1 span {
+    color: #82A7FA;
+}
+
+.welkom p,
+.goededoeltekst > p,
+.werkkaart p,
+.toekomsttekst > p,
+.samenwerken p {
+    margin: 18px 0 0;
+    color: #A1ABC0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.welkom p {
+    max-width: 480px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 26px;
+}
+
+.button,
+.buttonskill {
+    display: inline-block;
+    padding: 12px 18px;
+    border: 1px solid #283E6B;
+    border-radius: 8px;
+    color: #E6E9EF;
+    background-color: #142447;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.buttonskill {
+    background-color: transparent;
+}
+
+.button:hover,
+.buttonskill:hover {
+    background-color: #202C52;
+}
+
+.klok {
+    width: 410px;
+    flex-shrink: 0;
+    min-width: 0;
+    border: 1px solid #26334D;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #131720;
+    box-shadow: 0 16px 48px rgba(17, 37, 78, 0.26);
+}
+
+.klokbalk,
+.klokvoet {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+}
+
+.klokbalk {
+    border-bottom: 1px solid #202735;
+    background-color: #0F131B;
+}
+
+.klokpunt {
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #4ADE80;
+}
+
+.klokbalk p,
+.klokvoet p {
+    margin: 0;
+    color: #A1ABC0;
+    font-size: 12px;
+}
+
+.klokbalk p {
+    font-family: Consolas, monospace;
+}
+
+.kloklabel {
+    margin-left: auto;
+    padding: 6px 9px;
+    border-radius: 6px;
+    color: #ACCAFF;
+    background-color: #142447;
+    font-size: 11px;
+}
+
+.klokinhoud {
+    padding: 30px 22px;
+    text-align: center;
+    background-color: #141D2F;
+}
+
+.klokinhoud h2 {
+    margin: 0 0 12px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#tijd {
+    margin: 0;
+    color: #E7F0FF;
+    font-family: Consolas, monospace;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.lokaletijd {
+    margin: 10px 0 0;
+    color: #82A7FA;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.klokvoet {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid #202735;
+}
+
+.klokvoet a,
+.tekstlink {
+    color: #ACCAFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.klokvoet a:hover,
+.tekstlink:hover {
+    text-decoration: underline;
+}
+
+#uitgelicht {
+    padding-top: 30px;
+    border-top: 1px solid #202735;
+    scroll-margin-top: 18px;
+}
+
+.projectkop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.grotestitel {
+    margin: 0;
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.goededoel {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    border: 1px solid #202735;
+    border-radius: 20px;
+    background-color: #131720;
+}
+
+.goededoelfoto {
+    display: block;
+    flex: 1.45;
+    min-width: 0;
+}
+
+.goededoelfoto img {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.goededoeltekst {
+    flex: 1;
+    padding: 10px 10px 10px 0;
+}
+
+.goededoeltekst h2 {
+    margin: 0;
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 18px 0;
+}
+
+.tags p {
+    margin: 0;
+    padding: 6px 10px;
+    border: 1px solid #29364E;
+    border-radius: 999px;
+    color: #B4C6E7;
+    font-size: 12px;
+}
+
+.werkwijze {
+    margin-top: 68px;
+}
+
+.werkkaarten {
+    display: flex;
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.werkkaart {
+    flex: 1;
+    padding: 22px;
+    border: 1px solid #202735;
+    border-radius: 16px;
+    background-color: #131720;
+}
+
+.werkkaart h3 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.werkkaart p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.toekomst,
+.samenwerken {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 60px;
+    padding-top: 32px;
+    border-top: 1px solid #202735;
+}
+
+.toekomsttekst {
+    max-width: 500px;
+}
+
+.tijdlijn {
+    padding-left: 20px;
+    border-left: 2px solid #446FC5;
+}
+
+.stap + .stap {
+    margin-top: 20px;
+}
+
+.stap h3 {
+    margin: 0 0 5px;
+    color: #82A7FA;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.stap p {
+    margin: 0;
+    color: #E6E9EF;
+    font-size: 14px;
+}
+
+.samenwerken h2 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.samenwerken p {
+    margin-top: 6px;
+}
+
+@media (max-width: 800px) {
+    .intro {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .bovenkant,
+    .goededoel,
+    .werkkaarten,
+    .toekomst,
+    .samenwerken {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .bovenkant {
+        gap: 30px;
+        padding: 40px 0;
+    }
+
+    .klok {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #tijd {
+        font-size: 46px;
+    }
+
+    .welkom h1 {
+        font-size: 34px;
+    }
+
+    .goededoel {
+        gap: 18px;
+    }
+
+    .goededoeltekst {
+        padding: 0;
+    }
+
+    .samenwerken .buttonskill {
+        align-self: flex-start;
+    }
+}

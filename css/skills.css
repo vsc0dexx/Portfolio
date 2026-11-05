@@ -1,0 +1,248 @@
+html body {
+    background-color: #0B0D12
+}
+
+.work {
+    padding: 0 20px 40px;
+}
+
+
+
+#name {
+    display: flex;
+    justify-content: left;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+
+#skillstitle {
+    display: flex;
+    justify-content: left;
+    color: rgb(50, 93, 146);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 32px;
+    padding-left: 0;
+}
+
+#mywork {
+
+    padding-left: 0;
+}
+
+.work h1 {
+    display: flex;
+    justify-content: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 48px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 18px;
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.skill {
+    width: 48%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 32px;
+    background-color: #131720;
+    border: 1px solid #202735;
+    border-radius: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.skill h2 {
+    margin: 30px 0 14px;
+    color: #E6E9EF;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+
+.logohtml,
+.logocss,
+.logojava,
+.logosd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 16px;
+    background-color: #142447;
+}
+
+.skill h3 {
+    margin: 0;
+    color: #5B8DEF;
+    font: 700 22px Consolas, monospace;
+}
+
+.skill p {
+    margin: 0 0 24px;
+    color: #8A93A6;
+    font-size: 21px;
+    line-height: 1.6;
+}
+
+.properties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.properties h3 {
+    padding: 8px 16px;
+    border: 1px solid #202735;
+    border-radius: 999px;
+    color: #8A93A6;
+    font: 400 18px/1.25 Arial, Helvetica, sans-serif;
+}
+
+.skill .skill-level {
+    margin-top: auto;
+    font: 600 18px/1.4 Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
+
+.skill:hover {
+    transform: scale(1.01);
+    transition-duration: 0.4s;
+    border: 1px solid rgb(0, 153, 255);
+
+}
+
+
+@media (max-width: 700px) {
+    .skill {
+        width: 100%;
+        padding: 24px;
+    }
+
+}
+
+.sketchsection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: #080A0E;
+    border: 1px solid #202735;
+    border-radius: 20px;
+}
+
+.sketchpde {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 50px;
+    padding-left: 20px;
+    border-bottom: 1px solid #202735;
+    color: #8A93A6;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.code {
+    margin: 0;
+    padding: 22px 24px;
+    overflow-x: auto;
+    color: #E6E9EF;
+    font-family: Consolas, monospace;
+    font-size: 15px;
+    line-height: 26px;
+    white-space: pre-wrap;
+}
+
+.learning {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.toptext {
+    margin: 0 0 20px;
+    color: #8A93A6;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.learningitem {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.learningdot {
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+    margin-top: 4px;
+    border-radius: 50%;
+    background-color: #4ADE80;
+    border: 2px solid #0D1015;
+    outline: 1px solid #4ADE80;
+}
+
+.learningitem p {
+    margin: 0 0 6px;
+    color: #E6E9EF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.js h6 {
+    margin: 0;
+    color: #8A93A6;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    max-width: 300px;
+}
+
+.tools p {
+    margin: 0;
+    padding: 12px 16px;
+    color: #E6E9EF;
+    border: 1px solid #1E2533;
+    border-radius: 999px;
+    background-color: #12161F;
+    font-size: 14px;
+}
